@@ -1,0 +1,87 @@
+.container {
+  background-color: #27282D;
+  position: absolute;
+  /* width: 1920px; */
+  width: 2464px;
+  height: 80px;
+  left: 0px;
+  top: 0px;
+}
+
+.logo {
+  position: absolute;
+  width: 264px;
+  height: 30px;
+  left: 40px;
+  top: 25px;
+}
+
+.nav {
+  position: absolute;
+  right: 160px;
+  top: 20px;
+}
+
+.link {
+  width: 105px;
+  height: 24px;
+
+  margin: 0 60px 0 0;
+
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.08em;
+
+  /* White */
+  color: #FFFFFF;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.link:hover {
+  color: #264EB4;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px 24px;
+  gap: 10px;
+
+  position: absolute;
+  width: 119px;
+  height: 40px;
+  right: 40px;
+  top: 20px;
+
+  /* LandvilleGroup Primary */
+  background: #264EB4;
+  border-radius: 4px;
+
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+  letter-spacing: 0.01em;
+
+  /* White */
+  color: #FFFFFF;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
