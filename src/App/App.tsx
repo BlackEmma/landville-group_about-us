@@ -1,11 +1,14 @@
 import React from 'react';
 import './App.css';
+import { BrowserRouter } from 'react-router-dom';
 import Header from '../features/Header/Header';
 
 function App(): JSX.Element {
   return (
     <div className="App">
-      <Header />
+      <BrowserRouter>
+        <Header />
+      </BrowserRouter>
       <header className="App-header" />
     </div>
   );
