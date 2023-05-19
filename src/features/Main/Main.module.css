@@ -1,8 +1,7 @@
 .main {
   background-image: url(background_1920x1080.svg);
+  background-attachment: fixed;
   min-height: 100vh;
-  min-width: 100vw;
-  position: fixed;
 }
 
 .container {
