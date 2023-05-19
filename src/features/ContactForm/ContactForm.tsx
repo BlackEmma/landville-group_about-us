@@ -45,7 +45,25 @@ export default function ContactForm(): JSX.Element {
 
   return (
     <div>
-      <Button variant="contained" onClick={handleClickOpen}>
+      <Button
+        variant="contained"
+        onClick={handleClickOpen}
+        sx={{
+          background: '#264EB4',
+          borderRadius: '4px',
+          width: '119px',
+          height: '40px',
+          fontFamily: `'Segoe UI', Tahoma, Geneva, Verdana, sans-serif`,
+          fontStyle: 'normal',
+          fontWeight: 600,
+          fontSize: '13px',
+          lineHeight: '20px',
+          letterSpacing: '0.01em',
+          color: '#FFFFFF',
+          textTransform: 'none',
+          boxShadow: 'none',
+        }}
+      >
         Contact Us
       </Button>
       <BootstrapDialog
@@ -67,7 +85,13 @@ export default function ContactForm(): JSX.Element {
             <CloseIcon />
           </IconButton>
         </DialogTitle>
-        <Divider />
+        <Divider
+          sx={{
+            width: '540px',
+            height: '3px',
+            background: 'rgba(255, 255, 255, 0.05)',
+          }}
+        />
         <DialogContent>
           <DialogContentText
             sx={{
@@ -88,6 +112,9 @@ export default function ContactForm(): JSX.Element {
             placeholder="Your Name"
             disableUnderline
             sx={{
+              "& input": {
+                color: '#777777',
+              },
               background: 'rgba(255, 255, 255, 0.1)',
               border: '1 solid rgba(255, 255, 255, 0.05)',
               borderRadius: '6px',
@@ -116,6 +143,9 @@ export default function ContactForm(): JSX.Element {
             placeholder="Your Email"
             disableUnderline
             sx={{
+              "& input": {
+                color: '#777777',
+              },
               background: 'rgba(255, 255, 255, 0.1)',
               border: '1 solid rgba(255, 255, 255, 0.05)',
               borderRadius: '6px',
@@ -184,6 +214,9 @@ export default function ContactForm(): JSX.Element {
             placeholder="Your Message"
             disableUnderline
             sx={{
+              "& .MuiInputBase-inputMultiline": {
+                color: '#777777',
+              },
               background: 'rgba(255, 255, 255, 0.1)',
               border: '1 solid rgba(255, 255, 255, 0.05)',
               borderRadius: '6px',
