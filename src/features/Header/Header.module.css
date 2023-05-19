@@ -1,10 +1,11 @@
 .container {
   background-color: #27282D;
-  position: absolute;
   width: 100%;
   height: 80px;
-  left: 0px;
-  top: 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 40px;
 }
 
 .logo {
@@ -15,30 +16,18 @@
   top: 25px;
 }
 
-.nav {
-  position: absolute;
-  right: 160px;
-  top: 20px;
-}
-
 .link {
   width: 105px;
   height: 24px;
-
   text-decoration: none;
-
   margin: 0 60px 0 0;
-
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   /* identical to box height, or 150% */
-
   letter-spacing: 0.08em;
-
-  /* White */
   color: #FFFFFF;
 
   /* Inside auto layout */
@@ -49,43 +38,4 @@
 
 .link:hover {
   color: #264EB4;
-}
-
-.btn {
-  position: absolute;
-  width: 119px;
-  height: 40px;
-  right: 40px;
-  top: 20px;
-
-  /* LandvilleGroup Primary */
-  background: #264EB4;
-  border-radius: 4px;
-
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
-  /* identical to box height, or 143% */
-  letter-spacing: 0.01em;
-
-  /* White */
-  color: #FFFFFF;
-
-
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-
-.divider {
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  left: 0px;
-  top: 79px;
-
-  background: rgba(255, 255, 255, 0.05);
 }

@@ -17,7 +17,13 @@ function Header(): JSX.Element {
         </nav>
         <ContactForm />
       </div>
-      <Divider className={style.divider} />
+      <Divider
+        sx={{
+          width: '100%',
+          height: '1px',
+          background: 'rgba(255, 255, 255, 0.2)',
+        }}
+      />
     </>
   );
 }
