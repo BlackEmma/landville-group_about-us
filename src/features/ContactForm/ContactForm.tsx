@@ -1,7 +1,5 @@
 /* eslint-disable @typescript-eslint/quotes */
-/* eslint-disable import/no-extraneous-dependencies */
 import * as React from 'react';
-import Button from '@mui/material/Button';
 import Divider from '@mui/material/Divider';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
@@ -16,6 +14,7 @@ import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
 import Input from '@mui/material/Input';
 import { styled } from '@mui/material/styles';
+import StyledButton from '../../Components/StyledContactButton/StyledButton';
 import style from './ContactForm.module.css';
 
 const BootstrapDialog = styled(Dialog)(() => ({
@@ -45,27 +44,17 @@ export default function ContactForm(): JSX.Element {
 
   return (
     <div>
-      <Button
-        variant="contained"
+      <StyledButton
+        width="119px"
+        height="40px"
+        weight={600}
+        fontSize="13px"
+        lineHeight="20px"
+        letterSpacing="0.01em"
         onClick={handleClickOpen}
-        sx={{
-          background: '#264EB4',
-          borderRadius: '4px',
-          width: '119px',
-          height: '40px',
-          fontFamily: `'Segoe UI', Tahoma, Geneva, Verdana, sans-serif`,
-          fontStyle: 'normal',
-          fontWeight: 600,
-          fontSize: '13px',
-          lineHeight: '20px',
-          letterSpacing: '0.01em',
-          color: '#FFFFFF',
-          textTransform: 'none',
-          boxShadow: 'none',
-        }}
       >
         Contact Us
-      </Button>
+      </StyledButton>
       <BootstrapDialog
         open={open}
         onClose={handleClose}
@@ -228,27 +217,18 @@ export default function ContactForm(): JSX.Element {
           />
         </DialogContent>
         <DialogActions>
-          <Button
-            variant="contained"
+          <StyledButton
+            width="480px"
+            height="44px"
+            padding="10px 24px"
+            margin="0 30px 30px"
+            weight={700}
+            fontSize="16px"
+            lineHeight="24px"
             onClick={handleClose}
-            sx={{
-              background: '#264EB4',
-              borderRadius: '4px',
-              width: '480px',
-              height: '44px',
-              padding: '10px 24px',
-              margin: '0 30px 30px',
-              fontFamily: `'Segoe UI', Tahoma, Geneva, Verdana, sans-serif`,
-              fontStyle: 'normal',
-              fontWeight: 700,
-              fontSize: '16px',
-              lineHeight: '24px',
-              color: '#FFFFFF',
-              textTransform: 'none'
-            }}
           >
             Submit
-          </Button>
+          </StyledButton>
         </DialogActions>
       </BootstrapDialog>
     </div>
