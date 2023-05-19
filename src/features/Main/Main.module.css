@@ -1,0 +1,42 @@
+.main {
+  background-image: url(background_1920x1080.svg);
+  min-height: 100vh;
+  min-width: 100vw;
+  position: fixed;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome {
+  margin-top: 140px;
+  margin-bottom: 0;
+  height: 69px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 69px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.info {
+  height: 140px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  /* or 140% */
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #e0e0e0;
+}
+
+.info p {
+  margin-top: 30px;
+}
