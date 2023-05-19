@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Divider from '@mui/material/Divider';
+import ContactForm from '../ContactForm/ContactForm';
 import logo from './Group 1.png';
 import style from './Header.module.css';
 
@@ -14,7 +15,7 @@ function Header(): JSX.Element {
             <Link to="/landsupplier" className={style.link}>LandSupplier</Link>
             <Link to="/landville" className={style.link}>LandVille</Link>
         </nav>
-        <button type="button" className={style.btn}>Contact Us</button>
+        <ContactForm />
       </div>
       <Divider className={style.divider} />
     </>
