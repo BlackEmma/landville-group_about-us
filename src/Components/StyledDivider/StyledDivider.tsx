@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react';
 import Divider from '@mui/material/Divider';
 import { styled } from '@mui/system';

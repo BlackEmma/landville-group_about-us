@@ -10,10 +10,10 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
-import Input from '@mui/material/Input';
 import { styled } from '@mui/material/styles';
 import StyledButton from '../../Components/StyledContactButton/StyledButton';
 import StyledDialogContentText from '../../Components/StyledDialogContentText/StyledDialogContentText';
+import StyledInput from '../../Components/StyledInput/StyledInput';
 import style from './ContactForm.module.css';
 
 const BootstrapDialog = styled(Dialog)(() => ({
@@ -85,45 +85,19 @@ export default function ContactForm(): JSX.Element {
             Your Name
             <span className={style.star}> *</span>
           </StyledDialogContentText>
-          <Input
+          <StyledInput
             id="name"
             type="text"
             placeholder="Your Name"
-            disableUnderline
-            sx={{
-              '& input': {
-                color: '#777777',
-              },
-              background: 'rgba(255, 255, 255, 0.1)',
-              border: '1 solid rgba(255, 255, 255, 0.05)',
-              borderRadius: '6px',
-              width: '480px',
-              height: '44px',
-              padding: '11px 16px 13px',
-              margin: '16px 0 20px',
-            }}
           />
           <StyledDialogContentText>
             Your Email
             <span className={style.star}> *</span>
           </StyledDialogContentText>
-          <Input
+          <StyledInput
             id="email"
             type="email"
             placeholder="Your Email"
-            disableUnderline
-            sx={{
-              '& input': {
-                color: '#777777',
-              },
-              background: 'rgba(255, 255, 255, 0.1)',
-              border: '1 solid rgba(255, 255, 255, 0.05)',
-              borderRadius: '6px',
-              width: '480px',
-              height: '44px',
-              padding: '11px 16px 13px',
-              margin: '16px 0 20px'
-            }}
           />
           <StyledDialogContentText>
             Phone Number
@@ -159,25 +133,14 @@ export default function ContactForm(): JSX.Element {
           <StyledDialogContentText>
             Your Message
           </StyledDialogContentText>
-          <Input
+          <StyledInput
             id="message"
             type="text"
-            multiline
-            rows={4}
             placeholder="Your Message"
-            disableUnderline
-            sx={{
-              '& .MuiInputBase-inputMultiline': {
-                color: '#777777',
-              },
-              background: 'rgba(255, 255, 255, 0.1)',
-              border: '1 solid rgba(255, 255, 255, 0.05)',
-              borderRadius: '6px',
-              width: '480px',
-              height: '120px',
-              padding: '11px 16px 13px',
-              margin: '16px 0'
-            }}
+            multiline
+            height="120px"
+            margin="16px 0"
+            rows={4}
           />
         </DialogContent>
         <DialogActions>
