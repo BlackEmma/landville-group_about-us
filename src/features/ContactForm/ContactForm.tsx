@@ -1,10 +1,8 @@
-/* eslint-disable @typescript-eslint/quotes */
 import * as React from 'react';
 import Divider from '@mui/material/Divider';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
-import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
@@ -15,6 +13,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import Input from '@mui/material/Input';
 import { styled } from '@mui/material/styles';
 import StyledButton from '../../Components/StyledContactButton/StyledButton';
+import StyledDialogContentText from '../../Components/StyledDialogContentText/StyledDialogContentText';
 import style from './ContactForm.module.css';
 
 const BootstrapDialog = styled(Dialog)(() => ({
@@ -82,26 +81,17 @@ export default function ContactForm(): JSX.Element {
           }}
         />
         <DialogContent>
-          <DialogContentText
-            sx={{
-              fontFamily: `'Segoe UI', Tahoma, Geneva, Verdana, sans-serif`,
-              fontStyle: 'normal',
-              fontWeight: 600,
-              fontSize: '14px',
-              lineHeight: '20px',
-              color: '#FFFFFF',
-            }}
-          >
+          <StyledDialogContentText>
             Your Name
             <span className={style.star}> *</span>
-          </DialogContentText>
+          </StyledDialogContentText>
           <Input
             id="name"
             type="text"
             placeholder="Your Name"
             disableUnderline
             sx={{
-              "& input": {
+              '& input': {
                 color: '#777777',
               },
               background: 'rgba(255, 255, 255, 0.1)',
@@ -113,26 +103,17 @@ export default function ContactForm(): JSX.Element {
               margin: '16px 0 20px',
             }}
           />
-          <DialogContentText
-            sx={{
-              fontFamily: `'Segoe UI', Tahoma, Geneva, Verdana, sans-serif`,
-              fontStyle: 'normal',
-              fontWeight: 600,
-              fontSize: '14px',
-              lineHeight: '20px',
-              color: '#FFFFFF',
-            }}
-          >
+          <StyledDialogContentText>
             Your Email
             <span className={style.star}> *</span>
-          </DialogContentText>
+          </StyledDialogContentText>
           <Input
             id="email"
             type="email"
             placeholder="Your Email"
             disableUnderline
             sx={{
-              "& input": {
+              '& input': {
                 color: '#777777',
               },
               background: 'rgba(255, 255, 255, 0.1)',
@@ -144,18 +125,9 @@ export default function ContactForm(): JSX.Element {
               margin: '16px 0 20px'
             }}
           />
-          <DialogContentText
-            sx={{
-              fontFamily: `'Segoe UI', Tahoma, Geneva, Verdana, sans-serif`,
-              fontStyle: 'normal',
-              fontWeight: 600,
-              fontSize: '14px',
-              lineHeight: '20px',
-              color: '#FFFFFF',
-            }}
-          >
+          <StyledDialogContentText>
             Phone Number
-          </DialogContentText>
+          </StyledDialogContentText>
           <InputGroup
             className="mb-3"
             style={{
@@ -179,22 +151,14 @@ export default function ContactForm(): JSX.Element {
               style={{
                 background: 'rgba(255, 255, 255, 0.01)',
                 border: '1px solid rgba(255, 255, 255, 0.05)',
+                color: '#FFFFFF'
               }}
               value="+1"
             />
           </InputGroup>
-          <DialogContentText
-            sx={{
-              fontFamily: `'Segoe UI', Tahoma, Geneva, Verdana, sans-serif`,
-              fontStyle: 'normal',
-              fontWeight: 600,
-              fontSize: '14px',
-              lineHeight: '20px',
-              color: '#FFFFFF',
-            }}
-          >
+          <StyledDialogContentText>
             Your Message
-          </DialogContentText>
+          </StyledDialogContentText>
           <Input
             id="message"
             type="text"
@@ -203,7 +167,7 @@ export default function ContactForm(): JSX.Element {
             placeholder="Your Message"
             disableUnderline
             sx={{
-              "& .MuiInputBase-inputMultiline": {
+              '& .MuiInputBase-inputMultiline': {
                 color: '#777777',
               },
               background: 'rgba(255, 255, 255, 0.1)',
