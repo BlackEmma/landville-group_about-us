@@ -1,6 +1,5 @@
 import * as React from 'react';
 import Divider from '@mui/material/Divider';
-import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
@@ -10,25 +9,11 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
-import { styled } from '@mui/material/styles';
 import StyledButton from '../../Components/StyledContactButton/StyledButton';
 import StyledDialogContentText from '../../Components/StyledDialogContentText/StyledDialogContentText';
 import StyledInput from '../../Components/StyledInput/StyledInput';
 import style from './ContactForm.module.css';
-
-const BootstrapDialog = styled(Dialog)(() => ({
-  '& .MuiPaper-root': {
-    background: '#27282D',
-    width: 540,
-    height: 669,
-    border: '1 solid rgba(255, 255, 255, 0.05)',
-    boxShadow: '0 0 40 rgba(0, 0, 0, 0.1)',
-    borderRadius: 12,
-  },
-  '& .MuiDialogActions-root': {
-    padding: '0',
-  },
-}));
+import BootstrapDialog from '../../Components/BootstrapDialog/BootstrapDialog';
 
 export default function ContactForm(): JSX.Element {
   const [open, setOpen] = React.useState(false);
