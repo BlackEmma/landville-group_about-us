@@ -1,0 +1,7 @@
+version: '3'
+services:
+  landville:  
+    build: .
+    container_name: landville
+    ports:
+      - "80:3000"
