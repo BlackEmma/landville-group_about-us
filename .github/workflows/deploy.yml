@@ -15,7 +15,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-    - name: Start app with Docker Compose
-      run: docker-compose up -d --build
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Start app with Docker Compose
+        run: docker compose up -d --build
